@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu HTML</title>
+    <style>
+        .Pessoa{
+            color: red;
+            font-size: 20px;
+        }
+        .img_leao{
+            
+            width: 200px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="background: green;">Cabeçalho</h1>
+    <p><b><i>
+        Lorem ipsum dolor sit</i> </b><del> amet</del> <ins> consectetur</ins> adipisicing elit. <br>
+        <strong> Odio error dolore, placeat harum quia ad, <br></strong>
+        repudiandae blanditiis <em>consequatur</em> accusantium <s> suscipit</s> <u> inventore</u> nemo qui eveniet accusamus, <br>
+        necessitatibus magnam nobis nesciunt porro.<br>
+    </p>
+    <hr>
+    <p><a href="https://github.com/ThiagoCostaD" target="_blank">
+        <img class="img_leao" src="Leão.jpg" alt="Um Leão em aquarela" ></a>
+    </p>
+    <p style="background: blue; color: rgb(255, 255, 255); font-size: 25px;">
+        <b><Small>Pequeno</Small>      
+        2<sup><small>2</small></sup>        
+        H<small><sub>2</sub></small>O   <br>
+          
+    </b></p>
+    <hr>
+    <blockquote cite="https://github.com/ThiagoCostaD">
+        Aqui estou fazendo um bloco de citação
+    </blockquote>
+    <hr>
+    <pre><code>
+        <span class="Pessoa">class Pessoa: </span> 
+            ano_atual = 2022  # atributos de classe 
+            
+            def __init__(self, nome, idade):
+                self.nome = nome
+                self.idade = idade
+                
+            def get_ano_nascimento(self):
+                return Pessoa.ano_atual - self.idade
+                
+                
+        p1 = Pessoa('Thiago', 33)
+        p2 = Pessoa('Valéria', 39)
+        print(p1.get_ano_nascimento())
+        print(p2.get_ano_nascimento())
+        </code>  
+    </pre>
+    <div class="Pessoa">Eu sou um bloco</div>
+</body>
+</html>
